@@ -1,0 +1,26 @@
+<?php
+session_start();
+
+include(connections.php);
+include(functions.php);
+
+if($_SERVER['REQUEST_METHOD']=="POST")
+{//something was posted}
+$user_name=$_POST['user_name'];
+$password=$_POST['password'];
+?>
+<html>
+    <head>
+        <title>Signup</title>
+    </head>
+    <body>
+    </body>
+    <div>
+        <form method="POST">
+            <div style="font-size:20px; margin:10px;">SIGNUP</div>
+            <input type="text" name="USERNAME">
+            <input type="passowrd" name="PASSWORD">
+            <input type="submit" value="Login">
+            <a href="signup.html">LOGIN</a>
+    </div>
+</html>
