@@ -1,9 +1,11 @@
 /**
-* Template Name: iPortfolio - v3.6.0
-* Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+ * Template Name: iPortfolio - v3.6.0
+ * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+ * Author: BootstrapMade.com
+ * License: https://bootstrapmade.com/license/
+ *
+ * @format
+ */
 
 /*--------------------------------------------------------------
 # General
@@ -18,7 +20,6 @@
   overflow: hidden;
   background: #151515;
 }
-
 
 #preloader:before {
   content: "";
@@ -53,12 +54,11 @@
   }
 }
 
-
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   color: red;
-  background-color:black;
-  font-weight: bold !  important;
+  background-color: black;
+  font-weight: bold !important;
 }
 
 a {
@@ -67,21 +67,23 @@ a {
 }
 
 a:hover {
-  color:rgb(82, 82, 82);
+  color: rgb(82, 82, 82);
   text-decoration: none;
 }
 
-h1, h2, h3, h5, h6,  {
-font-family: 'Raleway', sans-serif;
-  color:red ! important;
-   font-weight:500 ! important;
+h1,
+h2,
+h3,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+  color: rgb(255, 255, 255) !important;
+  font-weight: bolder !important;
 }
-p{font-weight:500 ! important;
-  color:white;
-
+p {
+  font-weight: 500 !important;
+  color: white;
 }
-
-
 
 /*--------------------------------------------------------------
 # Back to top button
@@ -106,13 +108,12 @@ p{font-weight:500 ! important;
 }
 .back-to-top:hover {
   background: #2eafec;
-  color: gold ! important;
+  color: gold !important;
 }
 .back-to-top.active {
   visibility: visible;
   opacity: 1;
 }
-
 
 /*--------------------------------------------------------------
 # Header
@@ -146,7 +147,8 @@ p{font-weight:500 ! important;
   text-align-last: center;
   font-family: "Poppins", sans-serif;
 }
-#header .profile h1 a, #header .profile h1 a:hover {
+#header .profile h1 a,
+#header .profile h1 a:hover {
   color: #fff;
   text-decoration: none;
 }
@@ -199,7 +201,8 @@ p{font-weight:500 ! important;
   position: relative;
   white-space: nowrap;
 }
-.nav-menu a, .nav-menu a:focus {
+.nav-menu a,
+.nav-menu a:focus {
   display: flex;
   align-items: center;
   color: #a8a9b4;
@@ -208,16 +211,23 @@ p{font-weight:500 ! important;
   transition: 0.3s;
   font-size: 15px;
 }
-.nav-menu a i, .nav-menu a:focus i {
+.nav-menu a i,
+.nav-menu a:focus i {
   font-size: 24px;
   padding-right: 8px;
   color: #6f7180;
 }
-.nav-menu a:hover, .nav-menu .active, .nav-menu .active:focus, .nav-menu li:hover > a {
+.nav-menu a:hover,
+.nav-menu .active,
+.nav-menu .active:focus,
+.nav-menu li:hover > a {
   text-decoration: none;
   color: #fff;
 }
-.nav-menu a:hover i, .nav-menu .active i, .nav-menu .active:focus i, .nav-menu li:hover > a i {
+.nav-menu a:hover i,
+.nav-menu .active i,
+.nav-menu .active:focus i,
+.nav-menu li:hover > a i {
   color: #149ddd;
 }
 
@@ -250,36 +260,30 @@ p{font-weight:500 ! important;
   left: 0;
 }
 
-
 /* style pricing tags */
-.card{
+.card {
   border: none;
 }
-.divisionone{
+.divisionone {
   background-color: black;
-  
 }
-.divisionone .prices{
-  padding: 20px ! important;
+.divisionone .prices {
+  padding: 20px !important;
   cursor: pointer;
   padding: 20px;
 }
-.prices:hover{
+.prices:hover {
   background-color: gold;
   color: black;
 }
-
-
-
-
 
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
 #hero {
-  width: 100% ! important;
+  width: 100% !important;
   height: 106vh;
-  background: url("../img/kg.jpg")fixed top right;
+  background: url("../img/KnDjoshua1.jpg") fixed top right;
   background-size: cover;
 }
 #hero:before {
@@ -354,7 +358,7 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: red ! important;
+  color: red !important;
 }
 .section-title h2::after {
   content: "";
@@ -367,15 +371,17 @@ section {
   left: 0;
 }
 .section-title p {
-  color:black;
+  color: black;
   margin-bottom: 0;
 }
 
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
-.about{background-color:black;
-padding-bottom: 10px;}
+.about {
+  background-color: black;
+  padding-bottom: 10px;
+}
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
@@ -431,7 +437,7 @@ padding-bottom: 10px;}
 .facts .count-box p {
   padding: 15px 0 0 0;
   margin: 0 0 0 60px;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 16px;
   color: dodgerblue;
 }
@@ -479,7 +485,7 @@ padding-bottom: 10px;}
   height: 10px;
   transition: 0.9s;
   background-color: #149ddd;
-  color:black ! important;
+  color: black !important;
 }
 
 /*--------------------------------------------------------------
@@ -563,7 +569,8 @@ padding-bottom: 10px;}
   margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
 }
-.portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
+.portfolio #portfolio-flters li:hover,
+.portfolio #portfolio-flters li.filter-active {
   color: #149ddd;
 }
 .portfolio #portfolio-flters li:last-child {
@@ -608,7 +615,7 @@ padding-bottom: 10px;}
 }
 .portfolio .portfolio-wrap .portfolio-links a:hover {
   background: white;
-  color: #040b14 ! important;
+  color: #040b14 !important;
 }
 .portfolio .portfolio-wrap .portfolio-links a + a {
   border-left: 1px solid #7d37ed;
@@ -638,14 +645,20 @@ padding-bottom: 10px;}
   margin-top: 90px;
   position: relative;
 }
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
+.portfolio-details
+  .portfolio-details-slider
+  .swiper-pagination
+  .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   background-color: #fff;
   opacity: 1;
   border: 1px solid #149ddd;
 }
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+.portfolio-details
+  .portfolio-details-slider
+  .swiper-pagination
+  .swiper-pagination-bullet-active {
   background-color: #149ddd;
 }
 .portfolio-details .portfolio-info {
@@ -723,13 +736,14 @@ padding-bottom: 10px;}
 .services .description {
   margin-left: 80px;
   line-height: 24px;
-  color:white;
+  color: white;
 }
 
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
-.testimonials .testimonials-carousel, .testimonials .testimonials-slider {
+.testimonials .testimonials-carousel,
+.testimonials .testimonials-slider {
   overflow: hidden;
 }
 .testimonials .testimonial-item {
@@ -744,7 +758,7 @@ padding-bottom: 10px;}
 }
 .testimonials .testimonial-item h3 {
   font-size: 18px;
-  font-weight: bold ! important;
+  font-weight: bold !important;
   margin: 10px 0 5px 0;
   color: gold;
 }
@@ -754,7 +768,8 @@ padding-bottom: 10px;}
   margin: 0;
   font-weight: bold;
 }
-.testimonials .testimonial-item .quote-icon-left, .testimonials .testimonial-item .quote-icon-right {
+.testimonials .testimonial-item .quote-icon-left,
+.testimonials .testimonial-item .quote-icon-right {
   color: #c3e8fa;
   font-size: 26px;
 }
@@ -773,7 +788,7 @@ padding-bottom: 10px;}
   font-style: ;
   margin: 0 15px 15px 15px;
   padding: 20px;
-  background:black;
+  background: black;
   position: relative;
   margin-bottom: 35px;
   border-radius: 6px;
@@ -817,7 +832,7 @@ padding-bottom: 10px;}
   left: 0;
   right: 0;
 }
-.contact  {
+.contact {
   padding-bottom: 130px;
 }
 .contact .info {
@@ -844,17 +859,17 @@ padding-bottom: 10px;}
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 5px;
-  color:dodgerblue;
+  color: dodgerblue;
 }
 .contact .info p {
   padding: 0 0 10px 60px;
   margin-bottom: 20px;
   font-size: 14px;
-  color:gold ! important;
+  color: gold !important;
 }
 .contact .info .email p {
   padding-top: 5px;
-  color: gold ! important;
+  color: gold !important;
 }
 .contact .info .social-links {
   padding-left: 60px;
@@ -877,7 +892,9 @@ padding-bottom: 10px;}
   background: #149ddd;
   color: #fff;
 }
-.contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
+.contact .info .email:hover i,
+.contact .info .address:hover i,
+.contact .info .phone:hover i {
   color: gold;
 }
 .contact .php-email-form {
@@ -939,7 +956,8 @@ padding-bottom: 10px;}
 .contact .php-email-form label {
   padding-bottom: 8px;
 }
-.contact .php-email-form input, .contact .php-email-form textarea {
+.contact .php-email-form input,
+.contact .php-email-form textarea {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
@@ -950,7 +968,7 @@ padding-bottom: 10px;}
 .contact .php-email-form textarea {
   padding: 10px 15px;
 }
-.contact .php-email-form button[type=submit] {
+.contact .php-email-form button[type="submit"] {
   background: #149ddd;
   border: 0;
   padding: 10px 24px;
@@ -958,7 +976,7 @@ padding-bottom: 10px;}
   transition: 0.4s;
   border-radius: 4px;
 }
-.contact .php-email-form button[type=submit]:hover {
+.contact .php-email-form button[type="submit"]:hover {
   background: #37b3ed;
 }
 @-webkit-keyframes animate-loading {
