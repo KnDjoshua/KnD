@@ -157,11 +157,45 @@ p {
   text-align-last: center;
   font-family: "Poppins", sans-serif;
 }
-#header .profile h1 a,
-#header .profile h1 a:hover {
+#header .profile h1 a {
   color: #fff;
   text-decoration: none;
 }
+#header .profile h1 a:hover {
+  color: gold;
+  transition: 3s;
+}
+#header .profile .rounder:hover {
+  /* transition: 3s; */
+  /* border-bottom: 1px solid gold;
+  border-top: 1px solid gold; */
+
+  animation-name: example;
+  animation-duration: 3s;
+}
+
+@keyframes example {
+  20% {
+    rotate: 760deg;
+    transition: 4s;
+    border: 3px solid red;
+  }
+  25% {
+    /* rotate: 180deg; */
+    transition: 4s;
+    border: 3px solid rgb(255, 0, 208);
+  }
+   50% {
+    /* rotate: 180deg; */
+    border: 3px solid gold;
+    transition: 4s;
+  }
+
+  /* 50%  {width: 50%;} */
+  /* 75%  {width: 50%;} */
+  /* 100% {width: 50%;} */
+}
+
 #header .profile .social-links a {
   font-size: 20px;
   display: inline-block;
@@ -178,8 +212,14 @@ p {
 }
 #header .profile .social-links a:hover {
   background: #149ddd;
-  color: #fff;
+  color: gold !important;
   text-decoration: none;
+}
+
+#header .profile .social-links i:hover {
+  color: dodgerblue !important;
+  text-decoration: none;
+  transition: 0.6s;
 }
 
 #main {
