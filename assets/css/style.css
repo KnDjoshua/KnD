@@ -11,13 +11,15 @@
 # General
 --------------------------------------------------------------*/
 /* youtube_embeds */
-.youtube_embeds{
+.youtube_embeds {
   width: 100%;
 }
-.r{
-  text-shadow: 1px 1px 1px gold ;
+.r {
+  text-shadow: 1px 1px 1px gold;
 }
-
+.hovs:hover {
+  color: gold;
+}
 #preloader {
   position: fixed;
   top: 0;
