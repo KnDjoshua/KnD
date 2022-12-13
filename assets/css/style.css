@@ -14,6 +14,10 @@
 .youtube_embeds{
   width: 100%;
 }
+.r{
+  text-shadow: 1px 1px 1px gold ;
+}
+
 #preloader {
   position: fixed;
   top: 0;
