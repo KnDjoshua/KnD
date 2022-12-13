@@ -185,10 +185,13 @@ p {
     transition: 4s;
     border: 3px solid rgb(255, 0, 208);
   }
-   50% {
+  50% {
     /* rotate: 180deg; */
     border: 3px solid gold;
     transition: 4s;
+  }
+  80% {
+    animation-direction: reverse;
   }
 
   /* 50%  {width: 50%;} */
