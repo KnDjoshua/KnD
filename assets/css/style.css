@@ -12,6 +12,10 @@
 --------------------------------------------------------------*/
 
 /* shop styles */
+.price{
+  padding-bottom: 90px;
+  display: flex;
+}
 .bd-placeholder-img {
   font-size: 1.125rem;
   text-anchor: middle;
@@ -41,6 +45,7 @@ body {
               -------------------------------------------- */
 
 /* Carousel base class */
+
 .carousel {
   margin-bottom: 4rem;
 }
