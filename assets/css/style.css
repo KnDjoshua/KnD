@@ -456,6 +456,7 @@ p {
   background: url("../img/homepage/knd.jpg") fixed top right;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
 }
 #hero:before {
   content: "";
