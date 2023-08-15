@@ -453,7 +453,7 @@ p {
 #hero {
   width: 100% !important;
   height: 106vh;
-  background: url("../img/homepage/computers.jpg") fixed top right;
+  background: url("../img/homepage/knd.jpg") fixed top right;
   background-size: cover;
   background-position: center;
 }
@@ -472,6 +472,7 @@ p {
   z-index: 2;
   min-width: 300px;
   padding-bottom: 0px;
+  margin-left: 8%;
 }
 #hero h1 {
   margin: 0 0 10px 0;
