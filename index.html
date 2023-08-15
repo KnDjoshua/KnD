@@ -88,14 +88,37 @@
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column justify-content-center align-items-center ">
+  <section id="hero" class="d-flex  flex-column justify-content-center align-items-center ">
     <div class="hero-container" data-aos="fade-in">
       <h1 style="font-size:6vw;">I am KnDjoshua
       </h1>
-      <p style="font-size: 4vw;"><span class="typed" data-typed-items="Web Developer., Pen Tester., Freelancer., Student."></span></p>
-      <!-- <a href="https://flutterwave.com/donate/mhe2mqqi2zrw">
-        <i class="bi bi-currency-dollar" style="color: gold; font-size: 20px;"></i>
-        <i class="bi bi-cup-hot" style="color: gold; font-size: 20px;"></i></a> -->
+      <br>
+      <!-- TextScramble -->
+      <div class="text-change-container">
+  <div class="text-change"></div>
+</div><div class="text-change-container">
+  <div class="text-change"></div>
+</div>
+<!-- <p style="font-size: 4vw;"><span class="typed" data-typed-items="Web Developer., Pen Tester., Freelancer., Student."></span></p> -->
+
+<style>
+.text-change-container{
+  height:100%;
+  width:100%;
+  justify-content:left;
+  align-items:center;
+  display:flex;}
+.text-change{
+  font-family:'Goldman', monospace;
+  font-weight:normal;
+  font-size:3vw;
+  color:rgb(255, 255, 255);
+  filter: drop-shadow(0 0 0.3em rgba(200,200,200,0.3));}
+.dud{
+  color :rgba(200,30,30,0.8);
+  filter: drop-shadow(0 0 0.5em red);}
+</style>
+
 
     </div>
   </section><!-- End Hero -->
@@ -103,9 +126,8 @@
   <main id="main">
 
     <!-- ======= About Section ======= -->
-    <section id="about" class="about" style="height: auto;">
-      <div class="container">
-
+    <section id="about" class="about" style="height: 100vh;">
+      <div class="container-fluid">
         <div class="section-title">
           <h2>About</h2>
           <p style="color:white">Oloya Kennedy Joshua, mononymously known as KnDjoshua is a student at
@@ -136,9 +158,10 @@
 
     </section>
 
+
     <!-- ======= Facts Section ======= -->
     <section id="facts" class="facts">
-      <div class="container">
+      <div class="container-fluid">
 
         <div class="section-title">
           <h2>Progress</h2>
@@ -180,7 +203,7 @@
 
     <!-- ======= Skills Section ======= -->
     <section id="skills" class="skills">
-      <div class="container">
+      <div class="container-fluid">
 
         <div class="section-title">
           <h2>Skills</h2>
@@ -314,7 +337,7 @@
     </section> -->
     <!-- End Services Section -->
     <!-- section for pricing-->
-    <section class="container" style="height: auto;" id="prices">
+    <section class="container-fluid" style="height: auto;" id="prices">
          <div class="section-title">
           <h2>Prices</h2>
       <div class="row">
@@ -397,7 +420,7 @@
     <!-- ======= Testimonials Section ======= -->
 
     <section style="height: 600px;" id="testimonials" class="testimonials">
-      <div class="container">
+      <div class="container-fluid">
         <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
           <div class="swiper-wrapper">
 
@@ -455,7 +478,7 @@
       }
     </style>
   <!-- ======= Contact Section ======= -->
-<section style="height: auto; padding-bottom: 25px;" id="contact" class=" container contact map mine5">
+<section style="height: auto; padding-bottom: 25px;" id="contact" class=" container-fluid contact map mine5">
   <div class="container ">
 
     <div class="section-title">
@@ -734,6 +757,91 @@
 
   gtag('config', 'UA-233241267-1');
 </script>
+
+
+
+<!-- text to show in landing page -->
+
+<script>
+  class TextScramble {
+  constructor(el) {
+    this.el = el
+    this.chars = '!<>-_\\/[]{}—=+*^?#________'
+    this.update = this.update.bind(this)
+  }
+  setText(newText) {
+    const oldText = this.el.innerText
+    const length = Math.max(oldText.length, newText.length)
+    const promise = new Promise((resolve) => this.resolve = resolve)
+    this.queue = []
+    for (let i = 0; i < length; i++) {
+      const from = oldText[i] || ''
+      const to = newText[i] || ''
+      const start = Math.floor(Math.random() * 40)
+      const end = start + Math.floor(Math.random() * 40)
+      this.queue.push({ from, to, start, end })
+    }
+    cancelAnimationFrame(this.frameRequest)
+    this.frame = 0
+    this.update()
+    return promise
+  }
+  update() {
+    let output = ''
+    let complete = 0
+    for (let i = 0, n = this.queue.length; i < n; i++) {
+      let { from, to, start, end, char } = this.queue[i]
+      if (this.frame >= end) {
+        complete++
+        output += to
+      } else if (this.frame >= start) {
+        if (!char || Math.random() < 0.28) {
+          char = this.randomChar()
+          this.queue[i].char = char
+        }
+        output += `<span class="dud">${char}</span>`
+      } else {
+        output += from
+      }
+    }
+    this.el.innerHTML = output
+    if (complete === this.queue.length) {
+      this.resolve()
+    } else {
+      this.frameRequest = requestAnimationFrame(this.update)
+      this.frame++
+    }
+  }
+  randomChar() {
+    return this.chars[Math.floor(Math.random() * this.chars.length)]
+  }
+}
+
+const phrases = [
+  '@kndjoshua',
+  'NetGuardian \ { 🥷 }',
+  'Web Developer \ { 🌍 }',
+  'Pen Tester \ { 🧪 }',
+  'Ethical Hacker \ { 🧑‍💻 }',
+  'Student \ { 🧑‍🎓 }',
+  '@kndjoshua'
+]
+<!-- <p style="font-size: 4vw;"><span class="typed" data-typed-items="Web Developer., Pen Tester., Freelancer., Student."></span></p> -->
+
+const el = document.querySelector('.text-change')
+const fx = new TextScramble(el)
+
+let counter = 0
+const next = () => {
+  fx.setText(phrases[counter]).then(() => {
+    setTimeout(next, 2000)
+  })
+  counter = (counter + 1) % phrases.length
+}
+
+next()
+</script>
+
 
 </body>
 
