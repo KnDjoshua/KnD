@@ -11,8 +11,11 @@
 # General
 --------------------------------------------------------------*/
 
+@import url("https://fonts.googleapis.com/css2?family=Goldman&family=Lavishly+Yours&display=swap");
+
 /* shop styles */
-.price{
+
+.price {
   padding-bottom: 90px;
   display: flex;
 }
@@ -467,6 +470,7 @@ p {
   position: relative;
   z-index: 2;
   min-width: 300px;
+  padding-bottom: 0px;
 }
 #hero h1 {
   margin: 0 0 10px 0;
@@ -474,6 +478,8 @@ p {
   font-weight: 700;
   line-height: 56px;
   color: #fff;
+  font-family: "Goldman", cursive;
+  /* font-family: 'Lavishly Yours', cursive; */
 }
 #hero p {
   color: #fff;
@@ -526,6 +532,8 @@ section {
   padding-bottom: 20px;
   position: relative;
   color: red !important;
+  font-family: "Goldman", cursive;
+  /* font-family: 'Lavishly Yours', cursive; */
 }
 .section-title h2::after {
   content: "";
