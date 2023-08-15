@@ -453,8 +453,9 @@ p {
 #hero {
   width: 100% !important;
   height: 106vh;
-  background: url("../img/new\ \(1\).jpg") fixed top right;
+  background: url("../img/homepage/computers.jpg") fixed top right;
   background-size: cover;
+  background-position: center;
 }
 #hero:before {
   content: "";
