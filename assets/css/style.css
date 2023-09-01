@@ -557,8 +557,10 @@ section {
 # About
 --------------------------------------------------------------*/
 .about {
-  background-color: black;
+  
   padding-bottom: 10px;
+  /* background-image: url(../../assets/img/KnDjoshua.jpg); */
+  background-attachment: fixed;
 }
 .about .content h3 {
   font-weight: 700;
