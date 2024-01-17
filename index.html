@@ -387,6 +387,14 @@
     <!-- <section class="container-fluid" style="height: auto;" id="prices">
       <div class="section-title">
         <h2>Prices</h2>
+
+        <p style="color: white;">
+          These tailored web design solutions are crafted to elevate your online presence and captivate your audience.
+          Whether you're a budding entrepreneur, a small business owner, or an established enterprise, we have the
+          perfect package to meet your unique needs.
+          <br>
+          <br>
+        </p>
         <div class="row">
           <div class="col-sm-4">
             <div class="section-title">
@@ -451,120 +459,117 @@
     <section class="container-fluid" style="height: auto;" id="prices">
       <div class="section-title">
         <h2>Prices</h2>
-
         <p style="color: white;">
           These tailored web design solutions are crafted to elevate your online presence and captivate your audience.
           Whether you're a budding entrepreneur, a small business owner, or an established enterprise, we have the
           perfect package to meet your unique needs.
           <br>
-          <br>
         </p>
+        <main class="main flow">
+          <div class="main__cards cards">
+            <div class="cards__inner">
+              <div class="cards__card card">
+                <h2 class="card__heading">Basic</h2>
+                <p class="card__price">$196.59</p>
+                <ul role="list" class="card__bullets flow">
+                  <li>1 Free .com, .org and ,net domain</li>
+                  <li>1 Year Free Web Hosting</li>
+                  <li>5 Free Email Accounts</li>
+                  <li>Search Engine Optimisation (SEO)</li>
 
+                </ul>
+                <a href="https://wa.link/85pm77" class="card__cta cta">Get Started</a>
+              </div>
 
-        <div class="main__cards cards">
-          <div class="cards__inner">
-            <div class="cards__card card">
-              <h2 class="card__heading">Basic</h2>
-              <p class="card__price">$196.59</p>
-              <ul role="list" class="card__bullets flow">
-                <li>1 Free .com, .org and ,net domain</li>
-                <li>1 Year Free Web Hosting</li>
-                <li>5 Free Email Accounts</li>
-                <li>Search Engine Optimisation (SEO)</li>
+              <div class="cards__card card">
+                <h2 class="card__heading">Pro</h2>
+                <p class="card__price">$249.01</p>
+                <ul role="list" class="card__bullets flow">
+                  <li>Reservation Form For Booking</li>
+                  <li>Search Engine Optimisation (SEO)</li>
+                  <li>Free Email Accounts (Optional)</li>
+                  <li>Facebook , Twitter, Linkedin Integration</li>
+                  <li>1 Year free Hosting(Optional)</li>
+                  <li>Very First loading Website</li>
 
-              </ul>
-              <a href="https://wa.link/85pm77" class="card__cta cta">Get Started</a>
+                </ul>
+                <a href="https://wa.link/l7wg3z" class="card__cta cta">Upgrade to Pro</a>
+              </div>
+
+              <div class="cards__card card">
+                <h2 class="card__heading">Ultimate</h2>
+                <p class="card__price">$510</p>
+                <ul role="list" class="card__bullets flow">
+                  <li>Google First page Search results Guaranteed</li>
+                  <li>24/7 Priority support</li>
+                  <li>Custom Logo Design Up to 4 Samples</li>
+                  <li>YouTube Video Integration</li>
+                  <li>Live Google Maps for Location purposes</li>
+                  <li>1 Year of free Domain (.com, .net, .org, .co.ug, .ug)</li>
+                </ul>
+                <a href="https://wa.link/qcfd23" class="card__cta cta">Go Ultimate</a>
+              </div>
             </div>
 
-            <div class="cards__card card">
-              <h2 class="card__heading">Pro</h2>
-              <p class="card__price">$249.01</p>
-              <ul role="list" class="card__bullets flow">
-                <li>Reservation Form For Booking</li>
-                <li>Search Engine Optimisation (SEO)</li>
-                <li>Free Email Accounts (Optional)</li>
-                <li>Facebook , Twitter, Linkedin Integration</li>
-                <li>1 Year free Hosting(Optional)</li>
-                <li>Very First loading Website</li>
-
-              </ul>
-              <a href="https://wa.link/l7wg3z" class="card__cta cta">Upgrade to Pro</a>
-            </div>
-
-            <div class="cards__card card">
-              <h2 class="card__heading">Ultimate</h2>
-              <p class="card__price">$510</p>
-              <ul role="list" class="card__bullets flow">
-                <li>Google First page Search results Guaranteed</li>
-                <li>24/7 Priority support</li>
-                <li>Custom Logo Design Up to 4 Samples</li>
-                <li>YouTube Video Integration</li>
-                <li>Live Google Maps for Location purposes</li>
-                <li>1 Year of free Domain (.com, .net, .org, .co.ug, .ug)</li>
-              </ul>
-              <a href="https://wa.link/qcfd23" class="card__cta cta">Go Ultimate</a>
-            </div>
+            <div class="overlay cards__inner"></div>
           </div>
-
-          <div class="overlay cards__inner"></div>
-        </div>
-  </main>
-  <!-- ------------------
+        </main>
+        <!-- ------------------
 pricing script 
 ----------------- -->
-  <script>
-    console.clear();
+        <script>
+          console.clear();
 
-    const cardsContainer = document.querySelector(".cards");
-    const cardsContainerInner = document.querySelector(".cards__inner");
-    const cards = Array.from(document.querySelectorAll(".card"));
-    const overlay = document.querySelector(".overlay");
+          const cardsContainer = document.querySelector(".cards");
+          const cardsContainerInner = document.querySelector(".cards__inner");
+          const cards = Array.from(document.querySelectorAll(".card"));
+          const overlay = document.querySelector(".overlay");
 
-    const applyOverlayMask = (e) => {
-      const overlayEl = e.currentTarget;
-      const x = e.pageX - cardsContainer.offsetLeft;
-      const y = e.pageY - cardsContainer.offsetTop;
+          const applyOverlayMask = (e) => {
+            const overlayEl = e.currentTarget;
+            const x = e.pageX - cardsContainer.offsetLeft;
+            const y = e.pageY - cardsContainer.offsetTop;
 
-      overlayEl.style = `--opacity: 1; --x: ${x}px; --y:${y}px;`;
-    };
+            overlayEl.style = `--opacity: 1; --x: ${x}px; --y:${y}px;`;
+          };
 
-    const createOverlayCta = (overlayCard, ctaEl) => {
-      const overlayCta = document.createElement("div");
-      overlayCta.classList.add("cta");
-      overlayCta.textContent = ctaEl.textContent;
-      overlayCta.setAttribute("aria-hidden", true);
-      overlayCard.append(overlayCta);
-    };
+          const createOverlayCta = (overlayCard, ctaEl) => {
+            const overlayCta = document.createElement("div");
+            overlayCta.classList.add("cta");
+            overlayCta.textContent = ctaEl.textContent;
+            overlayCta.setAttribute("aria-hidden", true);
+            overlayCard.append(overlayCta);
+          };
 
-    const observer = new ResizeObserver((entries) => {
-      entries.forEach((entry) => {
-        const cardIndex = cards.indexOf(entry.target);
-        let width = entry.borderBoxSize[0].inlineSize;
-        let height = entry.borderBoxSize[0].blockSize;
+          const observer = new ResizeObserver((entries) => {
+            entries.forEach((entry) => {
+              const cardIndex = cards.indexOf(entry.target);
+              let width = entry.borderBoxSize[0].inlineSize;
+              let height = entry.borderBoxSize[0].blockSize;
 
-        if (cardIndex >= 0) {
-          overlay.children[cardIndex].style.width = `${width}px`;
-          overlay.children[cardIndex].style.height = `${height}px`;
-        }
-      });
-    });
+              if (cardIndex >= 0) {
+                overlay.children[cardIndex].style.width = `${width}px`;
+                overlay.children[cardIndex].style.height = `${height}px`;
+              }
+            });
+          });
 
-    const initOverlayCard = (cardEl) => {
-      const overlayCard = document.createElement("div");
-      overlayCard.classList.add("card");
-      createOverlayCta(overlayCard, cardEl.lastElementChild);
-      overlay.append(overlayCard);
-      observer.observe(cardEl);
-    };
+          const initOverlayCard = (cardEl) => {
+            const overlayCard = document.createElement("div");
+            overlayCard.classList.add("card");
+            createOverlayCta(overlayCard, cardEl.lastElementChild);
+            overlay.append(overlayCard);
+            observer.observe(cardEl);
+          };
 
-    cards.forEach(initOverlayCard);
-    document.body.addEventListener("pointermove", applyOverlayMask);
+          cards.forEach(initOverlayCard);
+          document.body.addEventListener("pointermove", applyOverlayMask);
 
-  </script>
+        </script>
 
 
-  <!-- ======= Portfolio Section ======= -->
-  <!-- <section id="pic" class="portfolio">
+        <!-- ======= Portfolio Section ======= -->
+        <!-- <section id="pic" class="portfolio">
       <div class="container">
 
         <div class="section-title">
@@ -582,146 +587,133 @@ pricing script
     </section>End Portfolio Section -->
 
 
-  <!-- ======= Testimonials Section ======= -->
+        <!-- ======= Testimonials Section ======= -->
 
-  <section style="height: 600px;" id="testimonials" class="testimonials">
-    <div class="container-fluid">
-      <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-        <div class="swiper-wrapper">
+        <section style="height: 600px;" id="testimonials" class="testimonials">
+          <div class="container-fluid">
+            <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+              <div class="swiper-wrapper">
 
-          <div class="swiper-slide">
-            <div class="testimonial-item" data-aos="fade-up">
-              <p>
-                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                KnDjoshua saved us from a web disaster
-                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-              </p>
-              <img src="assets/img/isaac.jpg" class="testimonial-img" alt="">
-              <h3>Isaac Ssekisambu</h3>
-              <h4>Founder Zenj <br> Leadership
+                <div class="swiper-slide">
+                  <div class="testimonial-item" data-aos="fade-up">
+                    <p>
+                      <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                      KnDjoshua saved us from a web disaster
+                      <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                    </p>
+                    <img src="assets/img/anitah.jpeg" class="testimonial-img" alt="">
+                    <h3>Anitah Amanya</h3>
+                    <h4>Fashion Designer <br> and Model</h4>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="testimonial-item" data-aos="fade-up" data-aos-delay="200">
+                    <p>
+                      <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                      Committed, Honest, Reliable, Trustworthy
+                      <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                    </p>
+                    <img src="assets/img/isaac.jpg" class="testimonial-img" alt="">
+                    <h3>Isaac Ssekisambu</h3>
+                    <h4>Founder<br>Zenj Leadership Organization</h4>
+                  </div>
+                </div><!-- End testimonial item -->
+              </div>
+
             </div>
+
           </div>
+        </section><!-- End Testimonials Section -->
 
-          <div class="swiper-slide">
-            <div class="testimonial-item" data-aos="fade-up" data-aos-delay="100">
-              <p>
-                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                No one is better than KnDjoshua
-                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-              </p>
-              <img src="assets/img/scb.jpg" class="testimonial-img" alt="">
-              <h3>Solomon Bwanga</h3>
-              <h4>CEO<br>SCB Tours and Travel</h4>
+        <style type="text/css">
+          .mine5 {
+            width: 100%;
+            background: url("assets/img/map.jpg") fixed center center;
+            background-size: cover;
+            padding: 120px 0;
+          }
+        </style>
+        <!-- ======= Contact Section ======= -->
+        <section style="height: auto; padding-bottom: 25px;" id="contact" class=" container-fluid contact map mine5">
+          <div class="container">
+
+            <div class="section-title">
+              <h2>Contact</h2>
             </div>
-          </div><!-- End testimonial item -->
 
-          <div class="swiper-slide">
-            <div class="testimonial-item" data-aos="fade-up" data-aos-delay="200">
-              <p>
-                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                Committed, Honest, Reliable, Trustworthy
-                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-              </p>
-              <img src="assets/img/anitah.jpeg" class="testimonial-img" alt="">
-              <h3>Anitah Amanya</h3>
-              <h4>Fashion Designer<br> and Model</h4>
-            </div>
-          </div><!-- End testimonial item -->
-        </div>
-
-      </div>
-
-    </div>
-  </section><!-- End Testimonials Section -->
-
-  <style type="text/css">
-    .mine5 {
-      width: 100%;
-      background: url("assets/img/map.jpg") fixed center center;
-      background-size: cover;
-      padding: 120px 0;
-    }
-  </style>
-  <!-- ======= Contact Section ======= -->
-  <section style="height: auto; padding-bottom: 25px;" id="contact" class=" container-fluid contact map mine5">
-    <div class="container">
-
-      <div class="section-title">
-        <h2>Contact</h2>
-      </div>
-
-      <div class="row" data-aos="slide-up">
-        <div class="col-lg-6 ">
-          <div style="background-color: transparent ! important;" class="info">
-            <div class="address">
-              <i class="bi bi-geo-alt"></i>
-              <h4 style=" 
+            <div class="row" data-aos="slide-up">
+              <div class="col-lg-6 ">
+                <div style="background-color: transparent ! important;" class="info">
+                  <div class="address">
+                    <i class="bi bi-geo-alt"></i>
+                    <h4 style=" 
   font-family:'Goldman', monospace;
             ">Location:</h4>
-              <p>Ntinda, Kampala</p>
-              <p><a href="https://g.page/r/CfYWP5h2PhqDEB0/review" target="blank">View on maps</a></p>
-            </div>
+                    <p>Ntinda, Kampala</p>
+                    <p><a href="https://g.page/r/CfYWP5h2PhqDEB0/review" target="blank">View on maps</a></p>
+                  </div>
 
-            <div class="email">
-              <i class="bi bi-envelope"></i>
-              <h4 style=" 
+                  <div class="email">
+                    <i class="bi bi-envelope"></i>
+                    <h4 style=" 
   font-family:'Goldman', monospace;
             ">Email:</h4>
-              <a href="mailto:kndjoshua6@gmail.com">
-                <p>info@kndjoshua.github.io</p>
-              </a>
-            </div>
-            <div class="phone">
-              <i class="bi bi-phone"></i>
-              <h4 style=" 
+                    <a href="mailto:kndjoshua6@gmail.com">
+                      <p>info@kndjoshua.github.io</p>
+                    </a>
+                  </div>
+                  <div class="phone">
+                    <i class="bi bi-phone"></i>
+                    <h4 style=" 
   font-family:'Goldman', monospace;
             ">Call:</h4>
-              <a href="tel:+256 760 447 637">
-                <p>+256 760 447 637</p>
-              </a>
-              <a href="tel:+256 700 559 533">
-                <p>+256 700 559 533</p>
-              </a>
-            </div>
-          </div>
-        </div>
-        <!-- form is here -->
-        <div class="col-lg-6">
-          <h2 style="color: dodgerblue!important; 
+                    <a href="tel:+256 760 447 637">
+                      <p>+256 760 447 637</p>
+                    </a>
+                    <a href="tel:+256 700 559 533">
+                      <p>+256 700 559 533</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- form is here -->
+              <div class="col-lg-6">
+                <h2 style="color: dodgerblue!important; 
   font-family:'Goldman', monospace;
         ">Drop me a line <a target="_blank"
-              href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAO__TWWQIlUMjNLT0NBNERSMEpIR1hBOU1YTEs4UzBHNy4u">
-              🥷</a> </h2><br>
-          <form action="https://formsubmit.co/oloyakennedy7@gmail.com" method="POST" role="form" class="">
-            <input type="hidden" name="_next" value="https://kdjoshua.github.io/KnD/thanks.html">
-            <div class="row">
-              <div class="col-md-6">
-                <input style="width:100%; background-color: transparent ! important;color: rgb(156, 156, 156);"
-                  type="text" name="NAME" class="form-control" id="name" placeholder="Name" required>
-              </div><br><br>
-              <div class="col-md-6">
-                <input
-                  style="width:100%; background-color: transparent ! important; width:100%;color: rgb(156, 156, 156);"
-                  type="email" class="form-control" name="EMAIL" id="email" placeholder="Email" required>
-              </div><br><br>
-            </div>
-            <div>
-              <input style="width:100%; background-color: transparent ! important;color: rgb(156, 156, 156);"
-                type="text" class="form-control" name="SUBJECT" id="subject" placeholder="Subject" required>
-            </div><br>
-            <div>
-              <textarea style="width:100%; background-color: transparent ! important;color: rgb(156, 156, 156);"
-                class="form-control" name="MESSAGE" rows="6" required placeholder="Message"></textarea>
-            </div>
-            <div class="my-3">
-              <div class="text-center"><button type="submit" class="btn btn-sm btn-primary">Send message</button>
+                    href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAO__TWWQIlUMjNLT0NBNERSMEpIR1hBOU1YTEs4UzBHNy4u">
+                    🥷</a> </h2><br>
+                <form action="https://formsubmit.co/oloyakennedy7@gmail.com" method="POST" role="form" class="">
+                  <input type="hidden" name="_next" value="https://kdjoshua.github.io/KnD/thanks.html">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <input style="width:100%; background-color: transparent ! important;color: rgb(156, 156, 156);"
+                        type="text" name="NAME" class="form-control" id="name" placeholder="Name" required>
+                    </div><br><br>
+                    <div class="col-md-6">
+                      <input
+                        style="width:100%; background-color: transparent ! important; width:100%;color: rgb(156, 156, 156);"
+                        type="email" class="form-control" name="EMAIL" id="email" placeholder="Email" required>
+                    </div><br><br>
+                  </div>
+                  <div>
+                    <input style="width:100%; background-color: transparent ! important;color: rgb(156, 156, 156);"
+                      type="text" class="form-control" name="SUBJECT" id="subject" placeholder="Subject" required>
+                  </div><br>
+                  <div>
+                    <textarea style="width:100%; background-color: transparent ! important;color: rgb(156, 156, 156);"
+                      class="form-control" name="MESSAGE" rows="6" required placeholder="Message"></textarea>
+                  </div>
+                  <div class="my-3">
+                    <div class="text-center"><button type="submit" class="btn btn-sm btn-primary">Send message</button>
+                    </div>
+                </form>
               </div>
-          </form>
-        </div>
 
-      </div>
-  </section><!-- End Contact Section -->
-  <!--     <?php include('contact.html') ?> -->
+            </div>
+        </section><!-- End Contact Section -->
+        <!--     <?php include('contact.html') ?> -->
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
